@@ -19,7 +19,9 @@ const config: Config = {
         secondary: 'rgb(var(--color-secondary))',
         background: 'rgb(var(--color-background))',
         foreground: 'rgb(var(--color-foreground))',
-        border: 'rgb(var(--color-border))'
+        border: 'rgb(var(--color-border))',
+        dark_button_bg: '#50556D',
+        dark_toggle_bg: '#919AC0'
       },
     },
   },

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import "./globals.css";
 import '@rainbow-me/rainbowkit/styles.css';
 import { Providers } from "./providers";
 import dynamic from "next/dynamic";
+import { SideBar } from "./components/Sidebar/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: "SuperchainList",
@@ -28,12 +30,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${dmSans.className}`}>
+      <StoreProvider>
       <Providers>
-        <StoreProvider>
           {children}
-        </StoreProvider>
-      </Providers>
+      </Providers>        
+      </StoreProvider>
       </body>
     </html>
   );
