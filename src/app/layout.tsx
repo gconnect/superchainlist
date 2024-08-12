@@ -5,6 +5,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { Providers } from "./providers";
 import dynamic from "next/dynamic";
 import { SideBar } from "./components/Sidebar/SideBar";
+import { Header } from "./components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({subsets: ['latin']})
@@ -33,6 +34,10 @@ export default function RootLayout({
       <body className={`${dmSans.className}`}>
       <StoreProvider>
       <Providers>
+        {/* <div className="flex">
+          <SideBar/>
+          <Header/>
+        </div> */}
           {children}
       </Providers>        
       </StoreProvider>
