@@ -21,7 +21,11 @@ export default function Home() {
             <div className="">
               <Header/> 
             </div>
+            <div className="grid grid-cols-2">
             <NetworkCard/>         
+            <NetworkCard/>         
+
+            </div>
 
           </div>
           </div>
