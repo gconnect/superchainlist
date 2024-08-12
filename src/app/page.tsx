@@ -1,24 +1,23 @@
 'use client'
 import Image from "next/image";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { useAppSelector } from "@/store";
 import { FaToggleOff } from "react-icons/fa6";
 import { FaToggleOn } from "react-icons/fa6";
-import { useAppDispatch } from "@/store";
-import { setThemeState } from "@/store/themeSlice";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { setThemeState } from "@/lib/features/theme/themeSlice";
 
 export default function Home() {
-  const themeState = useAppSelector((state: any) => state.theme.themeState);
+  const theme = useAppSelector((state: any) => state.theme.themeState);
   const dispatch = useAppDispatch();
 
   return (
-    <main className={`flex min-h-screen flex-col text-black items-center justify-between p-24 ${themeState ? "bg-black" : "bg-white"}`}>
+    <main className={`flex min-h-screen flex-col text-black items-center justify-between p-24 ${theme ? "dark" : "light"}`}>
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p>
           Welcome to SuperchainList
         </p>
-          { themeState ? <FaToggleOff size={36} color="red" onClick={() => dispatch(setThemeState(false))}/> : 
-          <FaToggleOn  onClick={() => dispatch(setThemeState(true))}/>
+          { theme ? < FaToggleOn  size={36} color="red" onClick={() => dispatch(setThemeState(false))}/> : 
+          <FaToggleOff size={36} color="black"  onClick={() => dispatch(setThemeState(true))}/>
            }
           <ConnectButton/>
       </div>

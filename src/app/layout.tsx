@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   }
 };
 // setting ssr to false will make it persist
-const ReduxProvider = dynamic(() => import("@/store/reduxProviders"), {
+const StoreProvider = dynamic(() => import("@/StoreProvider"), {
   ssr: false
 });
 
@@ -30,9 +30,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
       <Providers>
-        <ReduxProvider>
+        <StoreProvider>
           {children}
-        </ReduxProvider>
+        </StoreProvider>
       </Providers>
       </body>
     </html>
