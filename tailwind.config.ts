@@ -21,7 +21,8 @@ const config: Config = {
         foreground: 'rgb(var(--color-foreground))',
         border: 'rgb(var(--color-border))',
         dark_button_bg: '#50556D',
-        dark_toggle_bg: '#919AC0'
+        dark_toggle_bg: '#919AC0',
+        dark_card_bg: '#1B1D29'
       },
     },
   },
