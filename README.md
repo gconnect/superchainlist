@@ -1,6 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# SuperchainList
+
+SuperchainList is a cutting-edge, real-time health check dashboard designed to provide a comprehensive overview of the network health status and vital information for various Optimism (OP) stack chains. This innovative platform serves as a centralized hub for monitoring and tracking the performance, security, and overall well-being of the OP ecosystem.
+
+## Key Features
+
+  - **Real-time Network Health Status:** SuperchainList displays up-to-the-minute data on the health and stability of OP stack chains, enabling users to quickly identify potential issues or bottlenecks.
+
+  - **Multi-Chain Support:** The dashboard supports multiple OP stack chains, allowing users to monitor and compare the performance of different chains in a single, unified interface.
+
+  - **Essential Information:** SuperchainList provides critical information on each chain, including:
+    - Node status and availability
+    - Block height and finality
+    - Transaction count and throughput
+    - Gas usage and fees
+    - Smart contract activity and metrics
+
+  - **Appearance:** Users can choose to view the dashboard in a light or dark mood.
+  - **Modular:** Users can easily add their network if it not available on the dashboard
+
+## Benefits
+
+- **Enhanced Transparency:** SuperchainList promotes transparency within the OP ecosystem, enabling users to make informed decisions.
+
+- **Improved Network Resilience:** By identifying potential issues in real-time, users can take proactive measures to ensure network stability and security.
+
+- **Streamlined Operations:** The dashboard simplifies monitoring and tracking, reducing the complexity and time required to manage OP stack chains.
+
+- **Community Building:** SuperchainList facilitates collaboration and knowledge-sharing, driving innovation and growth within the OP ecosystem.
+
+
+## Tech Stack Used
+
+- **Frontend:** React.js, Redux, and TailwindCSS for a responsive and intuitive user interface.
+gestion: Web3 libraries Ethers.js for interacting with OP stack chains. Rainbowkit and Wagmi for wallet connection.
+- **Real-time Data Processing:** From the RPCs of the various OP chains
+
+## How to run the app
 
 First, run the development server:
 
@@ -20,17 +56,4 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
