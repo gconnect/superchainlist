@@ -1,15 +1,17 @@
 'use client'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import React from 'react'
-import { SideBar } from '../Sidebar/SideBar'
+import { useAppSelector } from '@/lib/hooks';
 
 export const Header = () => {
+  const theme = useAppSelector((state: any) => state.theme.themeState);
+
   return (
     <div className='flex justify-between m-8'>
       <div className='flex-1 min-w-0'>
         <input 
           type='text' 
-          className='p-4 rounded h-12 w-3/4 ' 
+          className={`p-4 ${theme ? '' : 'border border-light_search_outline'} rounded h-12 w-3/4`}
           placeholder='Search for an OP chain'
         />
       </div>

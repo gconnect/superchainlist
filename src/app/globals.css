@@ -34,14 +34,43 @@
   color: rgba(var(--color-foreground))
 }
 
+.light-card-1 {
+  --color-background: 245 244 251;
+  --color-forground: 0 0 0;
+  background: rgba(var(--color-background));
+  color: rgba(var(--color-foreground))
+}
 
+.light-card-2 {
+  --color-background: 255 255 255;
+  --color-forground: 0 0 0;
+  background: rgba(var(--color-background));
+  color: rgba(var(--color-foreground))
+}
+
+/* 
 :global(.rk-connect-button) {
   background-color: #007bff;
   color: #ffffff;
+} */
+
+.dark-card-1 {
+  --color-background: 106 116 142;
+  --color-foreground: 0 0 0;
+  background: rgba(var(--color-background));
+  color: rgba(var(--color-foreground))
 }
+
+.dark-card-2 {
+  --color-background: 27 29 41;
+  --color-foreground: 217 217 217;
+  background: rgba(var(--color-background));
+  color: rgba(var(--color-foreground))
+}
+
 .dark {
-  --color-background: 15, 17, 26;
-  --color-foreground: 255 255 255;
+  --color-background: 15 17 26;
+  --color-foreground: 145 154 192;
   --color-primary: 102 102 102;
   --color-secondary: 153 153 153;
   --color-border: 15 23 42;
@@ -53,7 +82,7 @@
   --color-background: 15, 17, 26;
   --color-foreground: 255, 255, 255;
   background: rgba(var(--color-background));
-  color: rgba(var(--color-foreground))
+  color: rgba(var(--color-foreground));
 }
 
 

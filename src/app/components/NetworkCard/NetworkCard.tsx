@@ -1,15 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
+import {  useAppSelector } from "@/lib/hooks";
 
 export const NetworkCard = () => {
+  const theme = useAppSelector((state: any) => state.theme.themeState);
+
   return (
     <div className='flex p-4'>
-      <div className='flex flex-col bg-dark_button_bg rounded p-8 text-center items-center justify-center shadow-md'>
+      <div className={`flex flex-col ${theme ? 'dark-card-1' : 'light-card-1'} rounded p-8 text-center items-center justify-center shadow-md`}>
         <p>Current Block</p>
         <p className='text-2xl'>1234565675</p>
       </div>
-      <div className='bg-dark_card_bg rounded p-8'>
+      <div className={`${theme ? 'dark-card-2' : 'light-card-2 border'} rounded p-8`}>
         <div className='flex justify-between p-0'>
           <Image className='' src={'./assets/eth-icon.svg'} alt='eth' width={24} height={24}/>
           <p className='m-2'>Base Mainnet</p>
