@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import {  useAppSelector } from "@/lib/hooks";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 export const NetworkCard = () => {
   const theme = useAppSelector((state: any) => state.theme.themeState);
@@ -30,7 +31,9 @@ export const NetworkCard = () => {
         <ConnectButton />
         </div>
         <div className='flex justify-center my-2'>
-        <Image src={'./assets/arrow-down.svg'} alt='eth' width={24} height={24}/>
+        {/* <Image src={'./assets/arrow-down.svg'} alt='eth' width={24} height={24}/> */}
+        <MdOutlineKeyboardDoubleArrowDown className='mt-8' size={24} />
+
         </div>
       </div>
     </div>
