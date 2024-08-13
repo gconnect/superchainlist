@@ -54,8 +54,8 @@ export const MenuItems = () => {
   return (
     <div className='flex flex-col justify-between'>
       <div>
-        {menuItems.map((item) => 
-        (<div className={`flex ${theme ? 'hover:bg-dark_button_bg' : 'hover:bg-light_button_bg'}  p-2 rounded-full my-4 cursor-pointer`}>
+        {menuItems.map((item, index) => 
+        (<div key={index} className={`flex ${theme ? 'hover:bg-dark_button_bg' : 'hover:bg-light_button_bg'}  p-2 rounded-full my-4 cursor-pointer`}>
           {React.cloneElement(iconMapping[item.name])}
           <p className='m-2'>{item.name}</p>
         </div>)
