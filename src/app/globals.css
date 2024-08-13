@@ -34,14 +34,20 @@
   color: rgba(var(--color-foreground))
 }
 
+
+:global(.rk-connect-button) {
+  background-color: #007bff;
+  color: #ffffff;
+}
 .dark {
   --color-background: 15, 17, 26;
   --color-foreground: 255 255 255;
   --color-primary: 102 102 102;
   --color-secondary: 153 153 153;
-  --color-border: 68 68 68;
+  --color-border: 15 23 42;
   background: rgba(var(--color-background));
   color: rgba(var(--color-foreground));
+  border-right-color: rgba(var(--color-border));
 }
 .side-dark {
   --color-background: 15, 17, 26;

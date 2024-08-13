@@ -4,15 +4,15 @@ import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 export const NetworkCard = () => {
   return (
-    <div className='flex p-8'>
+    <div className='flex p-4'>
       <div className='flex flex-col bg-dark_button_bg rounded p-8 text-center items-center justify-center shadow-md'>
         <p>Current Block</p>
-        <p>123456</p>
+        <p className='text-2xl'>1234565675</p>
       </div>
       <div className='bg-dark_card_bg rounded p-8'>
-        <div className='flex justify-between p-2'>
+        <div className='flex justify-between p-0'>
           <Image className='' src={'./assets/eth-icon.svg'} alt='eth' width={24} height={24}/>
-          <p className='p-2'>Base Mainnet</p>
+          <p className='m-2'>Base Mainnet</p>
           <Image src={'./assets/round-circle.svg'} alt='eth' width={24} height={24}/>
         </div>
         <div className='flex justify-between m-2'>
@@ -24,7 +24,7 @@ export const NetworkCard = () => {
           <p>Eth</p>
         </div>
         <div className='flex justify-center my-2'>
-        <ConnectButton/>
+        <ConnectButton />
         </div>
         <div className='flex justify-center my-2'>
         <Image src={'./assets/arrow-down.svg'} alt='eth' width={24} height={24}/>

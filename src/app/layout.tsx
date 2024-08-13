@@ -28,17 +28,23 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body className={`${dmSans.className}`}>
       <StoreProvider>
       <Providers>
-        {/* <div className="flex">
-          <SideBar/>
-          <Header/>
-        </div> */}
-          {children}
+        <div className="flex">
+          <div className="w-1/4">
+            <SideBar/>
+          </div>
+          <div className="flex-grow">
+            <div className="flex-shrink-0">
+              <Header/>
+            </div>
+            {children}
+
+          </div>
+        </div>
       </Providers>        
       </StoreProvider>
       </body>

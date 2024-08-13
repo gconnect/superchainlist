@@ -45,14 +45,14 @@ export const MenuItems = () => {
     <div className='flex flex-col justify-between'>
       <div>
         {menuItems.map((item) => 
-        (<div className='flex hover:bg-dark_button_bg p-2 rounded-full my-4 cursor-wait'>
+        (<div className='flex hover:bg-dark_button_bg p-2 rounded-full my-4 cursor-pointer'>
           <Image src={item.icon} width={36} height={36} alt={item.name}/>
           <p className='m-2'>{item.name}</p>
         </div>)
         )}
       </div>
  
-      <div className='flex p-2 rounded-full my-4 cursor-wait'>
+      <div className='flex p-2 rounded-full my-4 cursor-pointer'>
       { theme ? < FaToggleOn className='text-dark_toggle_bg' size={36} 
             onClick={() => dispatch(setThemeState(false))}/> : 
             <FaToggleOff size={36} color="black"  
