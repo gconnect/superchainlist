@@ -33,13 +33,15 @@ export default function RootLayout({
       <body className={`${dmSans.className}`}>
         <StoreProvider>
           <Providers>
-            <Header />
             <div className="flex">
-              <div className="w-4/12">
+              <div className="w-3/12 md:block hidden">
                 <SideBar />
               </div>
-              <div className="flex-grow">
-                {children}
+              <div className="">
+                <Header />
+                  <div className="">
+                    {children}
+                  </div>
               </div>
             </div>
           </Providers>

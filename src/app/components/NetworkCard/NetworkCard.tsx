@@ -10,12 +10,12 @@ export const NetworkCard = () => {
   const theme = useAppSelector((state: any) => state.theme.themeState);
  
   return (
-    <div className='flex p-4'>
-      <div className={`flex flex-col ${theme ? 'dark-card-1' : 'light-card-1'} rounded-tl-md rounded-bl-md  p-8 text-center items-center justify-center shadow-lg`}>
+    <div className='flex md:p-4 p-2'>
+      <div className={`flex flex-col ${theme ? 'dark-card-1' : 'light-card-1'} rounded-tl-md rounded-bl-md  md:p-8 p-2 text-center items-center justify-center shadow-lg`}>
         <p>Current Block</p>
         <p className='text-2xl'>1234565675</p>
       </div>
-      <div className={`${theme ? 'dark-card-2' : 'light-card-2'} rounded-tr-md rounded-br-md shadow-lg p-8`}>
+      <div className={`${theme ? 'dark-card-2' : 'light-card-2'} rounded-tr-md rounded-br-md shadow-lg md:p-8 p-2`}>
         <div className='flex justify-between p-0'>
           <Image className='' src={'./assets/eth-icon.svg'} alt='eth' width={24} height={24}/>
           <p className='m-2'>Base Mainnet</p>
@@ -30,8 +30,8 @@ export const NetworkCard = () => {
           <p>Eth</p>
         </div>
         <div className='flex justify-center my-4'>
-        <CustomConnectButton isHeader={false} style={theme ? 'border border-white rounded-full' :
-                   'border border-red-400 text-red-400 rounded-full'}/>
+        <CustomConnectButton isHeader={false} style={theme ? ' bg-transparent border border-white rounded-full' :
+                   'bg-transparent border border-red-400 text-red-400 rounded-full'}/>
         </div>
         <div className='flex justify-center'>
         <MdOutlineKeyboardDoubleArrowDown className={`${theme ? '' : 'red'}`} size={24} />

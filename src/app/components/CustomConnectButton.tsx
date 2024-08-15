@@ -13,7 +13,7 @@ export const CustomConnectButton = ( { style, isHeader }: Istyle) => {
   const theme = useAppSelector((state) =>  state.theme.themeState)
   const { isConnected } = useAccount()
   const signer = useEthersSigner()
-  
+  const {chainId} = useAccount()
   return (
     <ConnectButton.Custom>
       {({
@@ -46,7 +46,7 @@ export const CustomConnectButton = ( { style, isHeader }: Istyle) => {
             {(() => {
               if (!connected) {
                 return (
-                  <button className={`bg-transparent  ${ style }  p-2`} onClick={openConnectModal} type="button">
+                  <button className={`${ style }  p-2`} onClick={openConnectModal} type="button">
                   Connect Wallet
                   </button>
                 );
@@ -54,7 +54,7 @@ export const CustomConnectButton = ( { style, isHeader }: Istyle) => {
               if(!isHeader){
                 if (connected) {
                   return (
-                    <button className={`bg-transparent  ${ style }  p-2`} onClick={() => addNetwork(signer?.provider)} type="button">
+                    <button className={`md:text-md text-sm  ${ style }  md:p-2 p-1.5`} onClick={() => addNetwork(chainId!)} type="button">
                     Add Network to Wallet
                     </button>
                   );
