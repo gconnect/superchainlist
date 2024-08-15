@@ -20,6 +20,7 @@ const config: Config = {
         background: 'rgb(var(--color-background))',
         foreground: 'rgb(var(--color-foreground))',
         border: 'rgb(var(--color-border))',
+        buttonColor: '#B80018',
         dark_button_bg: '#50556D',
         dark_toggle_bg: '#919AC0',
         dark_card_bg: '#1B1D29',  

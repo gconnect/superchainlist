@@ -6,8 +6,8 @@ import { DetailNetworkTable } from "./components/DetailNetworkTable/DetailNetwor
 
 export default function Home() {
   return (
-    <main className={`flex flex-col w-full`}>
-          <div className="grid grid-cols-2 m-4">
+    <main className={`flex flex-col w-full my-8`}>
+          <div className="flex flex-wrap m-4 justify-center ">
             <NetworkCard/>         
             <NetworkCard/>  
             <NetworkCard/>         

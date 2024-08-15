@@ -17,12 +17,13 @@
 } */
 
 .light {
-  --color-background: 255, 255, 255;
+  --color-background: 243, 243, 243;
   --color-foreground: 0, 0, 0;
   --color-primary: 0, 123, 255;
   --color-secondary: 108, 117, 125;
   --color-border: 221, 221, 221;
   background: rgba(var(--color-background));
+  transition: 0.7s
 }
 
 .side-light {
@@ -77,12 +78,14 @@
   background: rgba(var(--color-background));
   color: rgba(var(--color-foreground));
   border-right-color: rgba(var(--color-border));
+  transition: 0.7s
 }
 .side-dark {
   --color-background: 15, 17, 26;
   --color-foreground: 255, 255, 255;
   background: rgba(var(--color-background));
   color: rgba(var(--color-foreground));
+  transition: 0.7s;
 }
 
 

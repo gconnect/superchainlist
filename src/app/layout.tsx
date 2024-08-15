@@ -31,21 +31,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.className}`}>
-      <StoreProvider>
-      <Providers>
-        <div className="flex">
-          <div className="w-1/4">
-            <SideBar/>
-          </div>
-          <div className="flex-grow">
-            <div className="flex-shrink-0">
-              <Header/>
+        <StoreProvider>
+          <Providers>
+            <Header />
+            <div className="flex">
+              <div className="w-4/12">
+                <SideBar />
+              </div>
+              <div className="flex-grow">
+                {children}
+              </div>
             </div>
-            {children}
-          </div>
-        </div>
-      </Providers>        
-      </StoreProvider>
+          </Providers>
+        </StoreProvider>
       </body>
     </html>
   );

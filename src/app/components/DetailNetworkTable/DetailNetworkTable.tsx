@@ -7,15 +7,15 @@ export const DetailNetworkTable = () => {
   return (
     <div className='flex flex-col justify-center items-center my-16 mx-8'>
       <h2 className={` ${theme ? '' : 'text-red-500'} text-center text-2xl mb-8`}>Base Mainnet RPC URL List</h2>
-      <table className="table-auto rounded-lg">
+      <table className="table-auto rounded-lg w-3/4">
         <thead className=''>
           <tr className='border rounded-lg'>
-            <th>RPC Server Address</th>
-            <th>Height</th>
-            <th>Latency</th>
-            <th>TPS</th>
-            <th>Score</th>
-            <th></th>
+            <th className='border'>RPC Server Address</th>
+            <th className='border' >Height</th>
+            <th className='border'>Latency</th>
+            <th className='border'>TPS</th>
+            <th className='border'>Score</th>
+            <th className='border'></th>
           </tr>
         </thead>
         <tbody>
