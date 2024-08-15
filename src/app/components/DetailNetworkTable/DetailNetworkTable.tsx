@@ -9,8 +9,7 @@ export const DetailNetworkTable = () => {
       <h2 className={` ${theme ? '' : 'text-red-500'} text-center md:text-2xl mb-8 text-lg`}>
         Base Mainnet RPC URL List
       </h2>
-      <div className='overflow-x-auto w-full'>
-        <table className="table-auto min-w-full rounded-lg">
+        <table className="table-auto rounded-lg overflow-x-auto">
           <thead>
             <tr className='border rounded-lg'>
               <th className='border p-2'>RPC Server Address</th>
@@ -56,7 +55,6 @@ export const DetailNetworkTable = () => {
             </tr>
           </tbody>
         </table>
-      </div>
     </div>
   );
 };
